@@ -31,5 +31,5 @@ export const reservationPage = function () {
   const contactInformation = document.createElement("p");
   contactInformation.classList.add("contact-info");
   menuLayout.appendChild(contactInformation);
-  contactInformation.innerHTML = `Posiedon's Garden <br> Spencer Road <br> London <br> EL5 6NE`;
+  contactInformation.innerHTML = `Poseidon's Garden <br> Spencer Road <br> London <br> EL5 6NE`;
 };
