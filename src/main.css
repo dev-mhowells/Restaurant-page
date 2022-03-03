@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  background-image: url("images/mahmoud-fawzy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#content {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+  grid-template-rows: 1fr;
+}
+
+.left-side {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-column: 1;
+  grid-row: 1 / -1;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+}
+
+.description {
+  color: white;
+  margin: 20px;
+  margin-top: 50px;
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.right-side {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-column: 2;
+  grid-row: 1 / -1;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.1fr 0.2fr 0.7fr;
+}
+
+.nav {
+  /* border: 1px solid black; */
+  grid-column: 1 / -1;
+  grid-row: 1;
+  display: grid;
+  align-items: center;
+  justify-items: start;
+  grid-column: repeat(4, 1fr);
+  color: white;
+  font-family: "Playfair Display", serif;
+  background-color: rgba(17, 15, 15, 0.3);
+  box-shadow: 2px 6px 4px -4px rgb(43, 36, 36, 0.9);
+}
+
+.home {
+  grid-column: 2;
+  cursor: pointer;
+}
+
+.menu {
+  grid-column: 3;
+  cursor: pointer;
+}
+
+.reservation {
+  grid-column: 4;
+  cursor: pointer;
+}
+
+.background-image {
+  /* border: 1px solid black; */
+  grid-column: 1 / -1;
+  grid-row: 2 / -1;
+}
+
+.header {
+  /* border: 1px solid black; */
+  grid-column: 1 / -1;
+  grid-row: 2;
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 25px;
+  margin-left: -400px;
+}
+
+/* MENU ----------------------------------- */
+
+.menu-layout {
+  display: grid;
+  grid-template-rows: 0.1fr 0.1fr 0.8fr;
+  grid-template-columns: 1fr;
+  /* border: 1px solid white; */
+}
+
+.menu-header {
+  /* border: 1px solid white; */
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  margin: 0;
+  margin-left: 15px;
+  display: grid;
+  align-items: center;
+}
+
+.menu-title {
+  /* border: 1px solid white; */
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 30px;
+  grid-row: 2;
+  grid-column: 1 / -1;
+  margin: 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.menu-item-container {
+  /* border: 1px solid white; */
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 18px;
+  grid-row: 3;
+  grid-template-columns: 1 / -1;
+  grid-template-rows: 3 / -1;
+  display: grid;
+  grid-template-columns: 0.8fr 0.2fr;
+  /* grid-template-rows: repeat(5, 1fr); */
+}
+
+.menu-item-rows {
+  /* border: 1px solid white; */
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: 1fr;
+}
+
+.menu-item-prices {
+  /* border: 1px solid white; */
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.menu-item {
+  /* border: 1px solid red; */
+  margin: 0;
+  display: grid;
+  justify-self: center;
+  align-self: flex-end;
+}
+
+.menu-item-description {
+  font-size: 15px;
+  /* border: 1px solid blue; */
+  margin: 0;
+  margin-left: 15px;
+}
+
+/* .pricing {
+  border: 1px solid orangered;
+ grid-template-rows: repeat(5, 1fr);
+} */
+
+/* RESERVATION */
+
+.contact-info {
+  margin: 0;
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  color: white;
+  text-align: center;
+  margin-top: -100px;
+}
